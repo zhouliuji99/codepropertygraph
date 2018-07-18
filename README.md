@@ -82,8 +82,8 @@ The base schema provides the minimum requirements all valid Code Property Graphs
 The base specification is concerned with three aspects of the program:
 
   1. *Program structure*
-  1. *Type declarations*
-  1. *Method declarations*
+  2. *Type declarations*
+  3. *Method declarations*
 
 In the following sections,
 we first give a brief overview of the graph's node and edge types and
