@@ -26,9 +26,9 @@ stages:
 jobs:
   include:
   - env: TEST="compile"
-    script: sbt compile
+    script: sbt sonatypeList
   - stage: release
-    script: sbt ci-release
+    script: sbt sonatypeDrop
 before_cache:
 - du -h -d 1 $HOME/.ivy2/cache
 - du -h -d 2 $HOME/.sbt/
