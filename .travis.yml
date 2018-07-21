@@ -27,8 +27,12 @@ jobs:
   include:
   - env: TEST="compile"
     script: sbt sonatypeList
+    script: sbt "sonatypeDrop 162e0d5fb93257"
+    script: sbt "sonatypeDrop 162ddcfbdc179f"
+    script: sbt "sonatypeDrop io.shiftleft"
+    script: sbt sonatypeList
   - stage: release
-    script: sbt sonatypeDrop
+    script: sbt sonatypeList
 before_cache:
 - du -h -d 1 $HOME/.ivy2/cache
 - du -h -d 2 $HOME/.sbt/
